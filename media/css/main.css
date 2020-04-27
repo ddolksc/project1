@@ -1,0 +1,558 @@
+/* 와이드 pc  */
+
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+#videoBG {
+   position:absolute; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+   transform:translateX(-50%) translateY(-50%);
+   z-index:-100; /*다른요소보다 아래에 위치*/
+}
+
+#imgBG{
+   position:absolute; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+   transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+   display:none
+}
+
+.down{display: block; font-size: 50px; font-weight: bold; position: absolute; 
+	 left:50%; margin-left: -15px; bottom: 10%;
+	animation:ani 1s infinite  alternate;}
+@keyframes ani {
+	0% { transform:scale(1); opacity:1; color:#fff;}
+	100% { transform:scale(1.2); opacity:0.6; color:#888;}
+}
+
+
+
+#content{}
+section{
+    overflow: hidden;
+}
+section h3{
+    text-align: center;
+    margin: 70px 0 50px;
+    font-size: 45px;
+    font-weight: 900;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+.comic{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    overflow: hidden;
+}
+.comic h3{
+    margin-top: 120px;
+}
+.comic h3 span{
+    color: #f00;
+}
+.comic > p{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+.comic .swiper-container{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+.comic .swiper-slide{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 488px;
+    overflow: hidden;
+}
+.comic .swiper-slide p{
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 300px;
+    height: 80px;
+    text-align: center;
+    line-height: 100px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background: rgb(255,0,0);
+    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,0,0,0.6) 64%, rgba(255,0,0,0) 100%);
+    color: #fff;
+    transition: 0.5s;
+}
+.comic .swiper-slide:hover p{
+    bottom: 0;
+}
+.comic .comic_more{
+    background: #fbd204;
+    padding: 10px;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    color: #333;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.comic .comic_more:hover{
+    color: #fff;
+    background: #f00;
+}
+
+
+.movie{
+    background: url(../images/main_movie_back.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+.movie .movie_info{
+    margin-bottom: 70px;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5em;
+}
+.movie .movie_more{
+    overflow: hidden;
+}
+.movie .movie_more dl{
+    float: left;
+    width: 40%;
+    padding: 5%;
+}
+.movie .movie_more .trailer{
+    background: url(../images/trailer_back.jpg);
+    background-size: cover;
+}
+.movie .movie_more .covering{
+    background: url(../images/covering_back.jpg);
+    background-size: cover;
+}
+.movie .movie_more dl dt{
+    margin: 5% 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+.movie .movie_more dl dt:after{
+    display: inline-block;
+    margin-left: 4px;
+    width: 10px;
+    height: 10px;
+    background: #fbd204;
+    border-radius: 5px;
+    content: "";
+}
+.movie .movie_more dl dd{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.movie .movie_more dl dd a{
+    color: #fbd204;
+    font-size: 20px;
+}
+.movie .movie_more dl dd a:hover{
+    color: #f00;
+    font-weight: bold;
+}
+
+
+.character{
+    width: 90%;
+    padding: 0 5%;
+    background: #111;
+}
+.character h3 span{
+    background: #f00;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.character .tabs {
+    position:relative;
+    overflow: hidden;
+} 
+.character .tabs a.tab{
+    display:block;
+    width:18%;
+    height: 30px;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+    background: #aaa;
+    padding: 5px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.character .tabs a.tab1{left:1%; top:0}
+.character .tabs a.tab2{left:21%; top:0}
+.character .tabs a.tab3{left:41%; top:0}
+.character .tabs a.tab4{left:61%; top:0}
+.character .tabs a.tab5{left:81%; top:0}
+
+.character .tabs .contlist{
+    margin-top:40px;
+    display: none;
+    line-height:1.5em;
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 30px;
+    margin-bottom: 70px;
+}
+.character .tabs .contlist ul{
+    width: 100%;
+    overflow: hidden;
+}
+.character .tabs .contlist ul li{
+    float: left;
+}
+.character .tabs .contlist ul li img{
+    width: 100%;
+}
+.character .tabs .contlist ul li:first-of-type{
+    width: 60%;
+    
+}
+.character .tabs .contlist ul li:last-of-type{
+    margin-top: 80px;
+    width: 38%;
+    padding: 1%;
+}
+.character .tabs .contlist ul li dl dt{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.character .tabs .contlist ul li dl dd{
+    color: #fff;
+}
+
+
+
+
+.hero{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+
+}
+.hero h3:after{
+    display: block;
+    width: 20%;
+    height: 5px;
+    margin: 0 40%;
+    background: #f00;
+    content: "";
+}
+.hero ul{
+    overflow: hidden;
+}
+.hero ul li{
+    position: relative;
+    width: 23%;
+    float: left;
+    margin: 1%;
+}
+.hero ul li div img{
+    width: 100%;
+}
+.hero ul li .hero_info{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 80%;
+    padding: 10%;
+    background: rgba(0,0,0,0.5);
+    transition: 0.5s;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    opacity: 0;
+}
+.hero ul li .hero_info p.hero_name{
+    margin-bottom: 7%;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+.hero ul li:hover .hero_info{
+    opacity: 1;
+}
+
+
+.gallery{
+    background: url(../images/gall_back.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+.gallery h3:after{
+    display: inline-block;
+    margin-left: 4px;
+    width: 12px;
+    height: 12px;
+    background: #f00;
+    border-radius: 6px;
+    content: "";
+}
+.gallery .gallery_wrap{
+    width: 90%;
+    margin: 0 5%;
+    margin-bottom: 70px;
+    overflow: hidden;
+}
+.gallery .gallery_wrap>div{
+    float: left;
+    width: 50%;
+    overflow: hidden;
+}
+.gallery .gallery_wrap div a{
+    display: block;
+    transition: 0.5s;
+    transform-origin: center center;
+}
+.gallery .gallery_wrap div a:hover{
+    transform: scale(1.2)
+}
+.gallery .gallery_wrap .left img{
+    width: 100%;
+}
+.gallery .gallery_wrap .right{
+    overflow: hidden;
+}
+.gallery .gallery_wrap .right div{
+    float: left;
+    width: 50%;
+    overflow: hidden;
+}
+.gallery .gallery_wrap .right a{
+    display: block;
+}
+.gallery .gallery_wrap .right a img{
+    width: 100%;
+}
+
+
+.news{
+    margin-bottom: 70px;
+}
+.news h3 span{
+    background: #f00;
+    padding-left: 1%;
+}
+.news .news_wrap{
+    width: 90%;
+    margin: 0 5%;
+}
+.news .news_wrap a{
+    display: block;
+    color: #fff;
+}
+.news .news_wrap .news_up{
+    margin: 4%;
+}
+.news .news_wrap .news_up li{
+    margin: 0 auto;
+    width: 70%;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+.news .news_wrap .news_up li:last-of-type{
+    margin-top: 2%;
+}
+.news .news_wrap .news_up li img{
+    width: 100%;
+}
+
+.news .news_wrap .news_down{
+    overflow: hidden;
+}
+.news .news_wrap .news_down li{
+    float: left;
+    width: 31.33%;
+    margin: 0 1%;
+}
+.news .news_wrap .news_down li img{
+    width: 100%;
+}
+.news .news_wrap .news_down li p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    margin: 5%;
+}
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+    .character .tabs .contlist ul li:last-of-type{
+        margin-top: 40px;
+    }
+    .hero, .character, .comic{
+        width: 96%;
+        padding: 0 2%;
+    }
+    .hero ul li .hero_info{
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+	.hero, .comic{
+        width: auto;
+        margin: 0 auto;
+        margin-bottom: 70px;
+    }
+    .movie, .gallery{
+        background-attachment: scroll;
+    }
+    .character{
+        width: auto;
+        margin: 0 auto;
+    }
+    .character .tabs .contlist ul li{
+        float: none;
+    }
+    .character .tabs .contlist ul li:first-of-type, .character .tabs .contlist ul li:last-of-type{
+        width: auto;
+        margin: 0 auto;
+    }
+    .hero ul li{
+        width: 31.33%;
+        margin: 1%;
+    }
+    .hero ul li:nth-of-type(4n){
+        display: none;
+    }
+    .hero ul li .hero_info p.hero_name{
+        margin-bottom: 1%;
+    }
+    .gallery .gallery_wrap>div{
+        float: none;
+        width: 100%;
+    }
+    .news .news_wrap .news_up li{
+        width: auto;
+        margin: 0 auto;
+    }
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+	.comic h3{
+        margin-top: 90px;
+    }
+    .movie .movie_more dl{
+        float: none;
+        width: auto;
+    }
+    .character .tabs a.tab{
+        font-size: 20px;
+        padding: 0;
+    }
+    .hero ul li{
+        width: 48%;
+        margin: 1%;
+    }
+    .hero ul li:nth-of-type(3n){
+        display: none;
+    }
+    .hero ul li .hero_info{
+        position: relative;
+        opacity: 1;
+        height: 180px;
+    }
+    .news .news_wrap .news_down li{
+        width: 48%;
+        margin: 0 1%;
+    }
+    .news .news_wrap .news_down li:last-of-type{
+        display: none;
+    }
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+	section h3{
+        font-size: 35px;
+    }
+    .comic .swiper-slide p{
+        bottom: 0;
+    }
+    .comic .comic_more{
+        font-size: 16px;
+    }
+    .movie .movie_info{
+        font-size: 16px;
+    }
+    .hero ul li{
+        float: none;
+        width: 90%;
+        margin: 5%;
+    }
+    .hero ul li:nth-of-type(5){
+        display: none;
+    }
+    .hero ul li .hero_info{
+        height: auto;
+    }
+    .gallery .gallery_wrap .right div{
+        float: none;
+        width: auto;
+        margin: 0 auto;
+    }
+    .gallery .gallery_wrap .right div:nth-of-type(2), .gallery .gallery_wrap .right div:nth-of-type(3){
+        display: none;
+    }
+    .news .news_wrap .news_up{
+        margin: 5% auto;
+    }
+    .news .news_wrap .news_up li{
+        font-size: 20px;
+        margin: 5% 0;
+    }
+    .news .news_wrap .news_down li{
+        float: none;
+        width: auto;
+        margin: 0 auto;
+    }
+    .news .news_wrap .news_down li:nth-of-type(2){
+        display: none;
+    }
+}

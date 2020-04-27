@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>IRON MAN</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+    <link rel="apple-touch-startup-image" href="startup.png">
+    
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub_1.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/image.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/snap.svg-min.js"></script>
+    <script src="https://kit.fontawesome.com/cab56ded1d.js" crossorigin="anonymous"></script>
+    
+    <script> 
+        $(document).ready(function() {
+            $(".menuOpen").toggle(function() {
+                $(".mainMenu").slideDown('slow');
+            }, function() {
+                $(".mainMenu").slideUp('fast');
+            });
+            
+            var current=1;
+            
+            $(window).resize(function(){ 
+                var screenSize = $(window).width(); 
+                if( screenSize > 768){
+                    $(".mainMenu").show();
+                    current=1;
+                }
+                if(current==1 && screenSize <= 768){
+                    $(".mainMenu").hide();
+                    current=0;
+                }
+            }); 
+            
+            $('.popup-youtube').magnificPopup({
+                disableOn: 320,
+                type: 'iframe',
+                mainClass: 'mfp-fade',
+                removalDelay: 160,
+                preloader: true,
+                fixedContentPos: false
+            });
+            
+        });
+    </script>
+    <script>
+        // <![CDATA[
+            try {
+                window.addEventListener('load', function(){
+                    setTimeout(scrollTo, 0, 0, 1); 
+                }, false);
+            } catch(e) {}
+        // ]]>
+    </script>
+    <!--[if lt IE 9]> 
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">view contents</a>
+        <a href="#gnb">view navigation</a>
+    </div>
+    
+    <header id="headerArea">
+        <div class="headerInner">
+            <h1><a href="./index.html">iron man</a></h1>
+            <a class="menuOpen" href="#none"><i class="fas fa-bars"></i><span class="hidden">menu</span></a>
+            <nav id="gnb" class="mainMenu">
+                <h2 class="hidden">navigation</h2>
+                <ul>
+                    <li><h3><a href="./sub_1.html" style="color: #f00">COMICS</a></h3></li>
+                    <li><h3><a href="./sub_2.html">MOVIES</a></h3></li>
+                    <li><h3><a href="./sub_3.html">GALLERY</a></h3></li>
+                    <li><h3><a href="./sub_4.html">NEWS</a></h3></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div id="wrap">
+        <div class="videoBox">
+            <img src="images/sub_1/sun_1_main.jpg" id="imgBG" alt="">
+            <a class="down" href="#none"><i class="fas fa-angle-double-down"></i><span class="hidden">down</span></a>
+        </div>
+        
+        <article id="content">
+            <h2 class="hidden">contents</h2>
+            <section class="trailer">
+                <h3>COMICS</h3>
+                <div class="clip_part">
+                    <div class="subTitle"><span>Iron Man 2020 Trailer</span></div>
+                    <div class="contentArea">
+                        <div class="imgPart">
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=higbeSj2hqM">
+                                <img src="images/sub_1/comic_trailer.jpg" alt="Iron Man 2020">
+                                <div class="playBnt">
+                                    <img src="images/sub_2/play.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <p>
+                            <strong>IRON MAN 2020 &#35;1</strong><br> by Dan Slott, Christos Gage, and Pete Woods hits stands on January 15th in comic shops, on the Marvel Comics App, and on Marvel.com! 
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section>
+            <h3>SERIES</h3>
+                <div id="grid" class="grid clearfix">
+                    <a href="#none" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure>
+                            <img src="images/main_comic1.jpg" alt="">
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                            <figcaption>
+                                <p class="sr_title">Invincible Iron Man #600</p>
+                                <p>SSlott, Woods</p>
+                                <div class="btn">View</div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#none" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure>
+                            <img src="images/main_comic2.jpg" alt="">
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                            <figcaption>
+                                <p class="sr_title">Marvel-Verse: Iron Man</p>
+                                <p>Lee, Heck</p>
+                                <div class="btn">View</div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#none" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure>
+                            <img src="images/main_comic3.jpg" alt="">
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                            <figcaption>
+                                <p class="sr_title">Tony Stark: Iron Man #14</p>
+                                <p>Brubaker, Epting</p>
+                                <div class="btn">View</div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#none" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure>
+                            <img src="images/main_comic4.jpg" alt="">
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                            <figcaption>
+                                <p class="sr_title">Invincible Iron Man #15</p>
+                                <p>Friedrich, Tuska</p>
+                                <div class="btn">View</div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#none" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure>
+                            <img src="images/main_comic5.jpg" alt="">
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                            <figcaption>
+                                <p class="sr_title">Tony Stark: Iron Man #17</p>
+                                <p>Zub, Diaz</p>
+                                <div class="btn">View</div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#none" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure>
+                            <img src="images/main_comic6.jpg" alt="">
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                            <figcaption>
+                                <p class="sr_title">Tony Stark: Iron Man #19</p>
+                                <p>Gage, Manna</p>
+                                <div class="btn">View</div>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="#none" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure>
+                            <img src="images/main_comic7.jpg" alt="">
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                            <figcaption>
+                                <p class="sr_title">Marvel's Avengers: Iron Man#1</p>
+                                <p>Slott, Manna</p>
+                                <div class="btn">View</div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#none" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure>
+                            <img src="images/main_comic8.jpg" alt="">
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                            <figcaption>
+                                <p class="sr_title">Iron Man: Invincible Origins</p>
+                                <p>Zdarsky, Magno</p>
+                                <div class="btn">View</div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#none" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure>
+                            <img src="images/main_comic9.jpg" alt="">
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                            <figcaption>
+                                <p class="sr_title">Iron Man 2020: Edition #1</p>
+                                <p>Friedrich, Tuska</p>
+                                <div class="btn">View</div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#none" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure>
+                            <img src="images/main_comic10.jpg" alt="">
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                            <figcaption>
+                                <p class="sr_title">Avengers vs X-Men</p>
+                                <p>North, Charm</p>
+                                <div class="btn">View</div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#none" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure>
+                            <img src="images/main_comic11.jpg" alt="">
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                            <figcaption>
+                                <p class="sr_title">Tony Stark: Iron Man #16</p>
+                                <p>Zub, Schiti</p>
+                                <div class="btn">View</div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#none" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure>
+                            <img src="images/main_comic12.jpg" alt="">
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                            <figcaption>
+                                <p class="sr_title">Magnificent Ms. Marvel #6</p>
+                                <p>Ahmed, Jung</p>
+                                <div class="btn">View</div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </section>
+        </article>
+	</div>		
+    
+	<footer id="footerArea">
+        <a href="#">TOP</a>
+	    <ul class="company_logo">
+	        <li><a href="#none"><img src="images/marvel_logo.png" alt=""></a></li>
+	        <li><a href="#none"><img src="images/marvel_comics_logo.png" alt=""></a></li>
+	        <li><a href="#none"><img src="images/marvel_studio_logo.png" alt=""></a></li>
+	    </ul>
+	    <ul class="company_info">
+	        <li><a href="#none">Terms of Use</a></li>
+	        <li><a href="#none">Privacy Policy</a></li>
+	        <li><a href="#none">License Agreement</a></li>
+	        <li><a href="#none">Interest-Based Ads</a></li>
+	        <li><a href="#none">Marvel Insider Terms</a></li>
+	    </ul>
+	    <address>
+	        ©2020 MARVEL
+	    </address>
+	</footer>
+	<script>
+			(function() {
+	
+				function init() {
+					var speed = 250,
+						easing = mina.easeinout;
+
+					[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+						var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+							pathConfig = {
+								from : path.attr( 'd' ),
+								to : el.getAttribute( 'data-path-hover' )
+							};
+
+						el.addEventListener( 'mouseenter', function() {
+							path.animate( { 'path' : pathConfig.to }, speed, easing );
+						} );
+
+						el.addEventListener( 'mouseleave', function() {
+							path.animate( { 'path' : pathConfig.from }, speed, easing );
+						} );
+					} );
+				}
+
+				init();
+
+			})();
+		</script>
+</body>
+</html>

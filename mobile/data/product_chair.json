@@ -1,0 +1,40 @@
+{
+  "chair": [
+    {
+      "image": "chair01.jpg",
+      "productname": "파라오S2 브레인",
+      "price": "7,900,000원",
+      "link": "#"
+    },
+    {
+      "image": "chair02.jpg",
+      "productname": "파라오2 브레인",
+      "price": "6,250,000원",
+      "link": "#"
+    },
+    {
+      "image": "chair03.jpg",
+      "productname": "팬텀2 (캡틴아메리카)",
+      "price": "5,250,000원",
+      "link": "#"
+    },
+    {
+      "image": "chair04.jpg",
+      "productname": "팬텀2 (쥬빌리실버)",
+      "price": "4,600,000원",
+      "link": "#"
+    },
+    {
+      "image": "chair05.jpg",
+      "productname": "팬텀2 (쥬빌리실버)",
+      "price": "4,600,000원",
+      "link": "#"
+    },
+    {
+      "image": "chair06.jpg",
+      "productname": "팬텀2 (쥬빌리실버)",
+      "price": "4,300,000원",
+      "link": "#"
+    }
+  ]
+}

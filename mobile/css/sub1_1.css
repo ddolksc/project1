@@ -1,0 +1,77 @@
+/* CSS Document */
+
+.company h3{
+    color: #fbd204;
+    font-family: 'Oxanium', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 48px;
+}
+.company h3:after{
+    display: block;
+    width: 30px;
+    margin: 8px auto 48px;
+    height: 4px;
+    background: #333;
+    content: "";
+}
+.company .cm_mind{
+    overflow: hidden;
+    padding: 0 16px;
+}
+.company .cm_mind .cm_mind_title{
+    text-align: center;
+    font-family: 'Oxanium', cursive;
+    font-size: 26px;
+    font-weight: bold;
+}
+.company dl{
+    margin: 32px 5%;
+    margin-right: 15%;
+    background: #fff;
+}
+.company dt{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.company dt:after{
+    display: block;
+    margin:-6px 0;
+    height: 3px;
+    background: #fbd204;
+    content: "";
+}
+.company dl:nth-of-type(2){
+    text-align: right;
+    margin-left: 20%;
+    margin-right: 5%;
+}
+.company dd{
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 13px;
+}
+.result{
+    margin-bottom: 64px;
+}
+.result .result_title{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Jua', sans-serif;
+    margin: 16px 0;
+}
+.result .result_title:after{
+    display: block;
+    width: 30px;
+    margin: 8px auto 48px;
+    height: 4px;
+    background: #fbd204;
+    content: "";
+}
+.result img{
+    width: 90%;
+    margin: 0 5%;
+}

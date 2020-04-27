@@ -1,0 +1,121 @@
+/* 와이드 pc  */
+	
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+
+#imgBG{
+    position:fixed;
+    left: 50%;
+    top:50%;
+    width:auto;
+    min-width:100%;
+    height:auto;
+    min-height:100%;
+    transform:translateX(-50%) translateY(-50%);
+    z-index:-100;
+}
+.down{
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    left:50%;
+    margin-left: -15px;
+    bottom: 10%;
+	animation:ani 1s infinite  alternate;
+}
+@keyframes ani {
+	0% { transform:scale(1); opacity:1; color: #000;}
+	100% { transform:scale(1.2); opacity:0.6; color: #ddd;}
+}
+
+
+#content
+section{
+    overflow: hidden;
+    padding-bottom: 40px;
+    background: rgba(0,0,0,0.6);
+}
+section h3{
+    text-align: center;
+    margin: 70px 0 50px;
+    font-size: 45px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+.news h3{
+    margin-top: 120px;
+}
+.news h3 span{
+    color: #f00;
+}
+.news ul{
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    background: rgba(0,0,0,0.7);
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.news ul li{
+    float: left;
+    width: 50%;
+}
+.news ul li img{
+    width: 100%;
+}
+.news ul dl{
+    padding: 20px;
+}
+.news ul dl dt{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.news ul dl dd{
+    font-size: 20px;
+}
+
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+    .news ul{
+        width: 80%;
+    }
+    .news ul li{
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+    .news ul{
+        width: 90%;
+    }
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+	.news h3{
+        margin-top: 90px;
+    }
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+	section h3{
+        font-size: 35px;
+    }
+    .news ul dl dt{
+        font-size: 18px;
+    }
+    .news ul dl dd{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>IRON MAN</title>
+    <link rel="shortcut icon"  type="image/x-icon"  href="favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+    <link rel="apple-touch-startup-image" href="startup.png">
+    
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub_3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/image.js"></script>
+    <script src="js/masonry-docs.min.js"></script>
+    <script src="https://kit.fontawesome.com/cab56ded1d.js" crossorigin="anonymous"></script>
+    
+    <script> 
+        $(document).ready(function() {
+            $(".menuOpen").toggle(function() {
+                $(".mainMenu").slideDown('slow');
+            }, function() {
+                $(".mainMenu").slideUp('fast');
+            });
+            
+            var current=1;
+            
+            $(window).resize(function(){ 
+                var screenSize = $(window).width(); 
+                if( screenSize > 768){
+                    $(".mainMenu").show();
+                    current=1;
+                }
+                if(current==1 && screenSize <= 768){
+                    $(".mainMenu").hide();
+                    current=0;
+                }
+            }); 
+            
+        });
+    </script>
+    <script>
+        // <![CDATA[
+            try {
+                window.addEventListener('load', function(){
+                    setTimeout(scrollTo, 0, 0, 1); 
+                }, false);
+            } catch(e) {}
+        // ]]>
+    </script>
+    <!--[if lt IE 9]> 
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">view contents</a>
+        <a href="#gnb">view navigation</a>
+    </div>
+    
+    <header id="headerArea">
+        <div class="headerInner">
+            <h1><a href="./index.html">iron man</a></h1>
+            <a class="menuOpen" href="#none"><i class="fas fa-bars"></i><span class="hidden">menu</span></a>
+            <nav id="gnb" class="mainMenu">
+                <h2 class="hidden">navigation</h2>
+                <ul>
+                    <li><h3><a href="./sub_1.html">COMICS</a></h3></li>
+                    <li><h3><a href="./sub_2.html">MOVIES</a></h3></li>
+                    <li><h3><a href="./sub_3.html" style="color: #f00">GALLERY</a></h3></li>
+                    <li><h3><a href="./sub_4.html">NEWS</a></h3></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div id="wrap">
+        <div class="videoBox">
+            <img src="images/sub_3/sun_3_main.jpg" id="imgBG" alt="">
+            <a class="down" href="#none"><i class="fas fa-angle-double-down"></i><span class="hidden">down</span></a>
+        </div>
+        
+        <article id="content">
+            <h2 class="hidden">contents</h2>
+            <section class="gallery">
+                <h3><span>GALLERY</span></h3>
+                <div class="grid grid--images" data-js="imagesloaded-progress">
+                    <div class="grid-sizer"></div>
+                    <div class="grid-image-item">
+                        <img src="images/sub_3/gallery_01.jpg" alt="">
+                        <p class="title">DOCTOR TONY</p>
+                        <p class="info">Nuovi Concept Art Di Tony Stark Con La Cappa Della Levitazione Doctor Strange In Armayura</p>
+                    </div>
+                    <div class="grid-image-item">
+                        <img src="images/sub_3/gallery_02.jpg" alt="">
+                        <p class="title">'Iron Man 3'</p>
+                        <p class="info">Illustrates How Subtlety Has Had Its Day in the MCU</p>
+                    </div>
+                    <div class="grid-image-item">
+                        <img src="images/sub_3/gallery_03.jpg" alt="">
+                        <p class="title">TONY STARK</p>
+                        <p class="info">Things to Know About Bella Hadid’s Mystery Man</p>
+                    </div>
+                    <div class="grid-image-item">
+                    <img src="images/sub_3/gallery_04.jpg" alt="">
+                        <p class="title">IRON DOG</p>
+                        <p class="info">Marvel Avengers Iron Man Light Up Illusion Suit Dog Costume</p>
+                    </div>
+                    <div class="grid-image-item">
+                        <img src="images/sub_3/gallery_05.jpg" alt="">
+                        <p class="title">ENDGAME</p>
+                        <p class="info">The Iron Man ENDGAME Fate Concludes After A 10-Year Journey</p>
+                    </div>
+                    <div class="grid-image-item">
+                        <img src="images/sub_3/gallery_06.jpg" alt="">
+                        <p class="title">Marvel 101</p>
+                        <p class="info">Iron Man (Tony Stark), Marvel 101</p>
+                    </div>
+                    <div class="grid-image-item">
+                        <img src="images/sub_3/gallery_07.jpg" alt="">
+                        <p class="title">INFINITY WAR</p>
+                        <p class="info">Infinity War Movie Wallpaper</p>
+                    </div>
+                    <div class="grid-image-item">
+                        <img src="images/sub_3/gallery_08.jpg" alt="">
+                        <p class="title">IRON MAN 1</p>
+                        <p class="info">Iron Man 1 Main Movie Poster</p>
+                    </div>
+                    <div class="grid-image-item">
+                        <img src="images/sub_3/gallery_09.jpg" alt="">
+                        <p class="title">AVENGERS</p>
+                        <p class="info">Avengers : The Best Tiara Moments in Film</p>
+                    </div>
+                    <div class="grid-image-item">
+                        <img src="images/sub_3/gallery_10.jpg" alt="">
+                        <p class="title">All HEROES</p>
+                        <p class="info">Avengers: Infinity War</p>
+                    </div>
+                    <div class="grid-image-item">
+                        <img src="images/sub_3/gallery_11.jpg" alt="">
+                        <p class="title">ACTORS</p>
+                        <p class="info">MCU Actors Who Can Carry a Tune: Avengers the Musical?</p>
+                    </div>
+                    <div class="grid-image-item">
+                        <img src="images/sub_3/gallery_12.jpg" alt="">
+                        <p class="title">IRON MAN 2</p>
+                        <p class="info">A Look At Iron Man's Armor Upgrades Throughout The Years In The MCU</p>
+                    </div>
+                    <div class="grid-image-item">
+                        <img src="images/sub_3/gallery_13.jpg" alt="">
+                        <p class="title">FIGURE</p>
+                        <p class="info">Diamond Select Avengers Endgame Statues! Marvel Premier Figure</p>
+                    </div>
+                    <div class="grid-image-item">
+                        <img src="images/sub_3/gallery_14.jpg" alt="">
+                        <p class="title">DEFEAT</p>
+                        <p class="info">Tony Stark Is Disappointed After Losing The Battle</p>
+                    </div>
+                    <div class="grid-image-item">
+                        <img src="images/sub_3/gallery_15.jpg" alt="">
+                        <p class="title">PEPPER</p>
+                        <p class="info">Rate this fan made Pepper Potts Avengers Endgame Poster</p>
+                    </div>
+                    <div class="grid-image-item">
+                        <img src="images/sub_3/gallery_16.jpg" alt="">
+                        <p class="title">THANOS</p>
+                        <p class="info">Thanos Infinity Stones Gauntlet</p>
+                    </div>
+                    <div class="grid-image-item">
+                        <img src="images/sub_3/gallery_17.jpg" alt="">
+                        <p class="title">SUIT</p>
+                        <p class="info">Experience The Evolution Of IRON MAN</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+	</div>		
+    
+	<footer id="footerArea">
+	    <a href="#">TOP</a>
+        <ul class="company_logo">
+	        <li><a href="#none"><img src="images/marvel_logo.png" alt=""></a></li>
+	        <li><a href="#none"><img src="images/marvel_comics_logo.png" alt=""></a></li>
+	        <li><a href="#none"><img src="images/marvel_studio_logo.png" alt=""></a></li>
+	    </ul>
+	    <ul class="company_info">
+	        <li><a href="#none">Terms of Use</a></li>
+	        <li><a href="#none">Privacy Policy</a></li>
+	        <li><a href="#none">License Agreement</a></li>
+	        <li><a href="#none">Interest-Based Ads</a></li>
+	        <li><a href="#none">Marvel Insider Terms</a></li>
+	    </ul>
+	    <address>
+	        ©2020 MARVEL
+	    </address>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,124 @@
+/* CSS Document */
+
+#content .location_map{
+}
+#content .location_map h3{
+    color: #fbd204;
+    font-family: 'Oxanium', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 48px;
+}
+#content .location_map h3:after{
+    display: block;
+    width: 30px;
+    margin: 8px auto 48px;
+    height: 4px;
+    background: #333;
+    content: "";
+}
+#content .location_map #map{
+    width: 90%;
+    margin: 0 5%;
+    height: 300px;
+}
+#content .location_map dl{
+    margin: 32px 5%;
+    line-height: 1.5em;
+}
+#content .location_map dl dt{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+#content .location_map dl dd{
+    margin-left: 22px;
+    margin-bottom: 16px;
+}
+#content .location_map dl .add:before{
+    content: "\f1ad";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #fbd204;
+    margin-right: 8px;
+    font-size: 18px;
+}
+#content .location_map dl .num:before{
+    content: "\f3cd";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #fbd204;
+    margin-right: 8px;
+    font-size: 18px;
+}
+#content .directions{
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+#content .directions h3{
+    font-size: 32px;
+    font-family: 'Jua', sans-serif;
+    text-align: center;
+    margin-top: 48px;
+}
+#content .directions h3:after{
+    display: block;
+    width: 30px;
+    margin: 8px auto 48px;
+    height: 4px;
+    background: #fbd204;
+    content: "";
+}
+#content .directions>dl>dt{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 5%;
+}
+#content .directions>dl dl{
+    margin: 16px 5%;
+    line-height: 1.5em;
+    overflow: hidden;
+}
+#content .directions>dl dl dt{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+#content .directions>dl .bus dt{
+    margin-left: 16px;
+}
+#content .directions>dl dl dt span{
+    font-size: 12px;
+    font-weight: normal;
+}
+#content .directions>dl dl dd{
+    margin-left: 22px;
+    margin-bottom: 16px;
+}
+#content .directions>dl dl img{
+    margin: 0 4px 0 8px;
+    width: 20px;
+}
+#content .directions .subway .info{
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0 16px;
+}
+#content .directions .sub_title:before{
+    content: "\f239";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #fbd204;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+#content .directions .bus_title:before{
+    content: "\f207";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #fbd204;
+    margin-right: 8px;
+    font-size: 18px;
+}

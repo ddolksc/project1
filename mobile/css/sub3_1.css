@@ -1,0 +1,42 @@
+/* CSS Document */
+
+.event h3{
+    color: #fbd204;
+    font-family: 'Oxanium', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 48px;
+}
+.event h3:after{
+    display: block;
+    width: 30px;
+    margin: 8px auto 48px;
+    height: 4px;
+    background: #333;
+    content: "";
+}
+.event ul li{
+    padding: 0 5% 64px;
+    
+}
+.event ul li a{
+    display: block;
+    box-shadow: 2px 2px 2px 0px #292929;
+}
+.event ul li img{
+    width: 100%;
+}
+.event ul li p{
+    text-align: center;
+}
+.event ul li .event_name{
+    font-weight: bold;
+    padding-top: 16px;
+    padding-bottom: 8px;
+}
+.event ul li .event_day{
+    color: #aaa;
+    font-size: 13px;
+    padding-bottom: 16px;
+}

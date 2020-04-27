@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>IRON MAN</title>
+    <link rel="shortcut icon"  type="image/x-icon"  href="favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+    <link rel="apple-touch-startup-image" href="startup.png">
+    
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub_2.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/image.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="https://kit.fontawesome.com/cab56ded1d.js" crossorigin="anonymous"></script>
+    
+    <script> 
+        $(document).ready(function() {
+            $(".menuOpen").toggle(function() {
+                $(".mainMenu").slideDown('slow');
+            }, function() {
+                $(".mainMenu").slideUp('fast');
+            });
+            
+            var current=1;
+            
+            $(window).resize(function(){ 
+                var screenSize = $(window).width(); 
+                if( screenSize > 768){
+                    $(".mainMenu").show();
+                    current=1;
+                }
+                if(current==1 && screenSize <= 768){
+                    $(".mainMenu").hide();
+                    current=0;
+                }
+            }); 
+            
+            $('.popup-youtube').magnificPopup({
+                disableOn: 320,
+                type: 'iframe',
+                mainClass: 'mfp-fade',
+                removalDelay: 160,
+                preloader: true,
+                fixedContentPos: false
+            });
+            
+        });
+    </script>
+    <script>
+        // <![CDATA[
+            try {
+                window.addEventListener('load', function(){
+                    setTimeout(scrollTo, 0, 0, 1); 
+                }, false);
+            } catch(e) {}
+        // ]]>
+    </script>
+    <!--[if lt IE 9]> 
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">view contents</a>
+        <a href="#gnb">view navigation</a>
+    </div>
+    
+    <header id="headerArea">
+        <div class="headerInner">
+            <h1><a href="./index.html">iron man</a></h1>
+            <a class="menuOpen" href="#none"><i class="fas fa-bars"></i><span class="hidden">menu</span></a>
+            <nav id="gnb" class="mainMenu">
+                <h2 class="hidden">navigation</h2>
+                <ul>
+                    <li><h3><a href="./sub_1.html">COMICS</a></h3></li>
+                    <li><h3><a href="./sub_2.html" style="color: #f00">MOVIES</a></h3></li>
+                    <li><h3><a href="./sub_3.html">GALLERY</a></h3></li>
+                    <li><h3><a href="./sub_4.html">NEWS</a></h3></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div id="wrap">
+        <div class="videoBox">
+            <img src="images/sub_2/sub_2_main.jpg" id="imgBG" alt="">
+            <a class="down" href="#none"><i class="fas fa-angle-double-down"></i><span class="hidden">down</span></a>
+        </div>
+        
+        <article id="content">
+            <h2 class="hidden">contents</h2>
+            <section class="trailer">
+                <h3><span>M</span>OVIE TRAILER</h3>
+                <div class="trailer_up">
+                    <div class="clip_part">
+                        <div class="subTitle">AVENGERS: End Game</div>
+                        <div class="contentArea">
+                            <div class="imgPart">
+                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=TcMBFSGVi1c">
+                                    <img src="images/sub_2/trailer_endgame.jpg" alt="AVENGERS: End Game">
+                                    <div class="playBnt">
+                                        <img src="images/sub_2/play.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <p>
+                                To celebrate and thank the fans who have invested so deeply in the MCU, the filmmakers and talent from Marvel Studios' <strong>"Avengers: Endgame"</strong> will visit nine U.S. cities in July and August to treat fans at each tour stop.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trailer_down">
+                    <div class="clip_part">
+                        <div class="subTitle">IRON MAN 3</div>
+                        <div class="contentArea">
+                            <div class="imgPart">
+                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=f_h95mEd4TI">
+                                    <img src="images/sub_2/trailer_ironman_3.jpg" alt="IRON MAN 3">
+                                    <div class="playBnt">
+                                        <img src="images/sub_2/play.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <p>
+                                Marvel's <strong>"Iron Man 3"</strong> pits brash-but-brilliant industrialist Tony Stark / Iron Man against an enemy whose reach knows no bounds. When Stark finds his personal world destroyed at his enemy's hands, he embarks on a harrowing quest to find those responsible.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clip_part">
+                        <div class="subTitle">IRON MAN 2</div>
+                        <div class="contentArea">
+                            <div class="imgPart">
+                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=qsRZghNciIo">
+                                    <img src="images/sub_2/trailer_ironman_2.jpg" alt="IRON MAN 2">
+                                    <div class="playBnt">
+                                        <img src="images/sub_2/play.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <p>
+                                With the world now aware that he is <strong>"Iron Man"</strong>, billionaire inventor Tony Stark faces pressure from all sides to share his technology with the military. He is reluctant to divulge the secrets of his armored suit, fearing the information will fall into the wrong hands.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="behind">
+                <h3>BEHIND THE SCENES</h3>
+                <div class="clip_part">
+                    <div class="subTitle">IRON MAN 3</div>
+                    <div class="contentArea">
+                        <div class="imgPart">
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=wrwDGpabMRo">
+                                <img src="images/sub_2/behind_ironman_3.jpg" alt="IRON MAN 3">
+                                <div class="playBnt">
+                                    <img src="images/sub_2/play.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <p>
+                            Marvel shared a bunch of behind-the-scenes images from the film featuring stars Robert Downey Jr. and Gwyneth Paltrow and director Shane Black. Before the film's release, take a look at what went in to making the film. 
+                        </p>
+                    </div>
+                </div>
+                <div class="clip_part">
+                    <div class="subTitle">IRON MAN 2</div>
+                    <div class="contentArea">
+                        <div class="imgPart">
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=Xqnn8aHnIoo">
+                                <img src="images/sub_2/behind_ironman_2.jpg" alt="IRON MAN 2">
+                                <div class="playBnt">
+                                    <img src="images/sub_2/play.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <p>
+                            After how great the first Iron Man movie turned out, everyone expected the second to be just as awesome. It's time to look past the shiny armor and repulsor technology and see what went wrong behind the scenes of Iron Man 2.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </article>
+	</div>		
+    
+	<footer id="footerArea">
+	    <a href="#">TOP</a>
+        <ul class="company_logo">
+	        <li><a href="#none"><img src="images/marvel_logo.png" alt=""></a></li>
+	        <li><a href="#none"><img src="images/marvel_comics_logo.png" alt=""></a></li>
+	        <li><a href="#none"><img src="images/marvel_studio_logo.png" alt=""></a></li>
+	    </ul>
+	    <ul class="company_info">
+	        <li><a href="#none">Terms of Use</a></li>
+	        <li><a href="#none">Privacy Policy</a></li>
+	        <li><a href="#none">License Agreement</a></li>
+	        <li><a href="#none">Interest-Based Ads</a></li>
+	        <li><a href="#none">Marvel Insider Terms</a></li>
+	    </ul>
+	    <address>
+	        ©2020 MARVEL
+	    </address>
+	</footer>
+</body>
+</html>

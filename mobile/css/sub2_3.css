@@ -1,0 +1,29 @@
+/* CSS Document */
+
+.product_info h3{
+    color: #fbd204;
+    font-family: 'Oxanium', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 48px;
+}
+.product_info h3:after{
+    display: block;
+    width: 30px;
+    margin: 8px auto 48px;
+    height: 4px;
+    background: #333;
+    content: "";
+}
+.product_info{
+    margin-bottom: 64px;
+}
+.product_info img{
+    width: 90%;
+    margin: 0 5%;
+}
+.product_info video{
+    margin: 0 5%;
+    width: 90%;
+}

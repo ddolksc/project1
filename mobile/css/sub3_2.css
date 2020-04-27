@@ -1,0 +1,48 @@
+/* CSS Document */
+
+.class h3{
+    color: #fbd204;
+    font-family: 'Oxanium', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 48px;
+}
+.class h3:after{
+    display: block;
+    width: 30px;
+    margin: 8px auto 48px;
+    height: 4px;
+    background: #333;
+    content: "";
+}
+.class ul li{
+    padding: 0 5% 64px;
+}
+.class ul li a{
+    display: block;
+    box-shadow: 3px 3px 3px 0px #fbd204;
+    overflow: hidden;
+    background: #292929;
+}
+.class ul li .class_img{
+    float: left;
+    width: 45%;
+}
+.class ul li .class_img img{
+    width: 100%;
+}
+.class ul li .class_info{
+    float: right;
+    width: 55%;
+    color: #fff;
+    text-align: center;
+}
+.class ul li .class_info .class_name{
+    font-weight: bold;
+    line-height: 50px;
+}
+.class ul li .class_info .class_day{
+    font-size: 13px;
+    line-height: 20px;
+}

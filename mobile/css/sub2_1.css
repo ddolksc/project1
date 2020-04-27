@@ -1,0 +1,47 @@
+/* CSS Document */
+
+.product_info h3{
+    color: #fbd204;
+    font-family: 'Oxanium', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 48px;
+}
+.product_info h3:after{
+    display: block;
+    width: 30px;
+    margin: 8px auto 48px;
+    height: 4px;
+    background: #333;
+    content: "";
+}
+.product_info #product_list{
+    padding-top: 3px;
+    margin-bottom: 48px;
+}
+.product_info #product_list .product{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+.product_info #product_list .product a{
+    display: block;
+}
+.product_info #product_list .product img{
+    width: 100%;
+    box-shadow: 0 0 3px 2px rgba(0,0,0,0.3);
+}
+.product_info #product_list .product p{
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 8px 0;
+}
+.product_info #product_list .product .chair_name{
+    font-weight: bold;
+}
+.product_info #product_list .product .chair_price{
+    font-size: 13px;
+}

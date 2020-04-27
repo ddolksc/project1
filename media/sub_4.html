@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>IRON MAN</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+    <link rel="apple-touch-startup-image" href="startup.png">
+    
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub_4.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/image.js"></script>
+    <script src="https://kit.fontawesome.com/cab56ded1d.js" crossorigin="anonymous"></script>
+    
+    <script> 
+        $(document).ready(function() {
+            $(".menuOpen").toggle(function() {
+                $(".mainMenu").slideDown('slow');
+            }, function() {
+                $(".mainMenu").slideUp('fast');
+            });
+            
+            var current=1;
+            
+            $(window).resize(function(){ 
+                var screenSize = $(window).width(); 
+                if( screenSize > 768){
+                    $(".mainMenu").show();
+                    current=1;
+                }
+                if(current==1 && screenSize <= 768){
+                    $(".mainMenu").hide();
+                    current=0;
+                }
+            }); 
+            
+        });
+    </script>
+    <script>
+        // <![CDATA[
+            try {
+                window.addEventListener('load', function(){
+                    setTimeout(scrollTo, 0, 0, 1); 
+                }, false);
+            } catch(e) {}
+        // ]]>
+    </script>
+    <!--[if lt IE 9]> 
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">view contents</a>
+        <a href="#gnb">view navigation</a>
+    </div>
+    
+    <header id="headerArea">
+        <div class="headerInner">
+            <h1><a href="./index.html">iron man</a></h1>
+            <a class="menuOpen" href="#none"><i class="fas fa-bars"></i><span class="hidden">menu</span></a>
+            <nav id="gnb" class="mainMenu">
+                <h2 class="hidden">navigation</h2>
+                <ul>
+                    <li><h3><a href="./sub_1.html">COMICS</a></h3></li>
+                    <li><h3><a href="./sub_2.html">MOVIES</a></h3></li>
+                    <li><h3><a href="./sub_3.html">GALLERY</a></h3></li>
+                    <li><h3><a href="./sub_4.html" style="color: #f00">NEWS</a></h3></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div id="wrap">
+        <div class="videoBox">
+            <img src="images/sub_4/sub_4_main.JPG" id="imgBG" alt="">
+            <a class="down" href="#none"><i class="fas fa-angle-double-down"></i><span class="hidden">down</span></a>
+        </div>
+        
+        <article id="content">
+            <h2 class="hidden">contents</h2>
+            <section class="news">
+                <h3>NE<span>W</span>S</h3>
+                <ul>
+                    <li><img src="images/sub_4/news_01.jpg" alt=""></li>
+                    <li>
+                        <dl>
+                            <dt>Study Ranks the MCU's Heroes &amp; Villains</dt>
+                            <dd>A new study ranks the popularity of several Marvel Cinematic Universe heroes and villains. As many know, the MCU began in 2008 with Iron Man and steadily worked its way to becoming the biggest film franchise of all time. Its most recent installment, Spider-Man: Far From Home rolled out last summer, but its biggest film is Avengers: Endgame, which arrived just two months before Spidey's latest adventure. Currently, Endgame is the highest-grossing movie of all time worldwide, and even a year out from its release, fans are still celebrating its greatest moments. Videos went viral recently of opening night crowds reacting to scenes like Captain America (Chris Evans) wielding Thor's (Chris Hemsworth) hammer and numerous MCU heroes emerging from portals to fight Thanos (Josh Brolin).</dd>
+                        </dl>
+                    </li>
+                </ul>
+                <ul>
+                    <li><img src="images/sub_4/news_02.jpg" alt=""></li>
+                    <li>
+                        <dl>
+                            <dt>Batman vs Iron Man</dt>
+                            <dd>While much of their tech exists in some form or another in the real world, much of their wonderful toys are (as of now) pure fantasy. This is what makes “versus debates” so difficult to navigate. In his Hellbat armor, Bruce Wayne can go toe-to-toe with Darkseid. With the help of the Extremis serum, Tony Stark has full techno-organic control of his suits. To put it plainly, comics are not a reliable method to judge battle physics.<br>Both men are incredibly tech-savvy and have no problem in creating as many gadgets and gizmos as possible to help them out in a fight. But both Batman and Iron Man also have plenty of grit and personality which plays a big part in their abilities as well.</dd>
+                        </dl>
+                    </li>
+                </ul>
+                <ul>
+                    <li><img src="images/sub_4/news_03.jpg" alt=""></li>
+                    <li>
+                        <dl>
+                            <dt>James Gunn Ranks Iron Man &amp; Thor MCU Movie Trilogies</dt>
+                            <dd>Guardians of the Galaxy director James Gunn ranked the Iron Man and Thor trilogies in the Marvel Cinematic Universe. Since kicking off with Jon Favreau's Iron Man in 2008, the MCU has grown to include 23 movies total. Within the overarching Infinity Saga, the MCU has included mini-franchises of trilogies for Iron Man (Robert Downey Jr.), Thor (Chris Hemsworth) and Captain America (Chris Evans). Though Thor's story will continue in Thor: Love and Thunder, the Iron Man and Captain America series are concluded - for now.</dd>
+                        </dl>
+                    </li>
+                </ul>
+                <ul>
+                    <li><img src="images/sub_4/news_04.jpg" alt=""></li>
+                    <li>
+                        <dl>
+                            <dt>The New Iron Man is &#91;SPOILER&#93;, Marvel Comics Reveals?</dt>
+                            <dd>Guardians of the Galaxy director James Gunn ranked the Iron Man and Thor trilogies in the Marvel Cinematic Universe. Since kicking off with Jon Favreau's Iron Man in 2008, the MCU has grown to include 23 movies total. Within the overarching Infinity Saga, the MCU has included mini-franchises of trilogies for Iron Man (Robert Downey Jr.), Thor (Chris Hemsworth) and Captain America (Chris Evans). Though Thor's story will continue in Thor: Love and Thunder, the Iron Man and Captain America series are concluded - for now.</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+        </article>
+	</div>		
+    
+	<footer id="footerArea">
+	    <a href="#">TOP</a>
+        <ul class="company_logo">
+	        <li><a href="#none"><img src="images/marvel_logo.png" alt=""></a></li>
+	        <li><a href="#none"><img src="images/marvel_comics_logo.png" alt=""></a></li>
+	        <li><a href="#none"><img src="images/marvel_studio_logo.png" alt=""></a></li>
+	    </ul>
+	    <ul class="company_info">
+	        <li><a href="#none">Terms of Use</a></li>
+	        <li><a href="#none">Privacy Policy</a></li>
+	        <li><a href="#none">License Agreement</a></li>
+	        <li><a href="#none">Interest-Based Ads</a></li>
+	        <li><a href="#none">Marvel Insider Terms</a></li>
+	    </ul>
+	    <address>
+	        ©2020 MARVEL
+	    </address>
+	</footer>
+</body>
+</html>

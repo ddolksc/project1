@@ -1,0 +1,40 @@
+{
+  "frame": [
+    {
+      "image": "frame01.jpg",
+      "productname": "모션베드(Motion Bed)",
+      "price": "2,690,000원",
+      "link": "#"
+    },
+    {
+      "image": "frame02.jpg",
+      "productname": "이지모션베드(Easy Motion Bed)",
+      "price": "1,290,000원",
+      "link": "#"
+    },
+    {
+      "image": "frame03.jpg",
+      "productname": "마로네(Marrone)",
+      "price": "2,150,000원",
+      "link": "#"
+    },
+    {
+      "image": "frame04.jpg",
+      "productname": "비앙코(Bianco)",
+      "price": "1,450,000원",
+      "link": "#"
+    },
+    {
+      "image": "frame05.jpg",
+      "productname": "밀라노프레임(프렌치 그레이)",
+      "price": "540,000원",
+      "link": "#"
+    },
+    {
+      "image": "frame06.jpg",
+      "productname": "밀라노프레임(프러시안 블루)",
+      "price": "540,000원",
+      "link": "#"
+    }
+  ]
+}

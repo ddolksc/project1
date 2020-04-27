@@ -1,0 +1,45 @@
+/* CSS Document */
+
+.faq h3{
+    color: #fbd204;
+    font-family: 'Oxanium', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 48px;
+}
+.faq h3:after{
+    display: block;
+    width: 30px;
+    margin: 8px auto 48px;
+    height: 4px;
+    background: #333;
+    content: "";
+}
+.faq .faq_depth1{
+    border-top:1px solid #777;
+    margin: 0 5%;
+}
+.faq li a{
+    display: block;
+    padding: 16px 24px;
+    background: rgba(251,210,4,0.5);
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: justify;
+}
+.faq li ul{
+    background:#fff;
+    display: none;
+    padding: 10%;
+}
+.faq li ul li{
+    line-height: 1.5em;
+    text-align: justify;
+}
+.faq .last{
+    border-bottom:1px solid #777;
+}
+.faq>ul{
+    margin-bottom: 64px;
+}

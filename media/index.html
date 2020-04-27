@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>IRON MAN</title>
+    <link rel="shortcut icon"  type="image/x-icon"  href="favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+    <link rel="apple-touch-startup-image" href="startup.png">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="https://kit.fontawesome.com/cab56ded1d.js" crossorigin="anonymous"></script>
+
+    <script> 
+        $(document).ready(function() {
+            $(".menuOpen").toggle(function() {
+                $(".mainMenu").slideDown('slow');
+            }, function() {
+                $(".mainMenu").slideUp('fast');
+            });
+
+            var current=1;
+
+            $(window).resize(function(){ 
+                var screenSize = $(window).width(); 
+                if( screenSize > 768){
+                    $(".mainMenu").show();
+                    current=1;
+                }
+                if(current==1 && screenSize <= 768){
+                    $(".mainMenu").hide();
+                    current=0;
+                }
+            }); 
+            
+            var swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows : true,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            });
+            
+        });
+    </script>
+    <script>
+        // <![CDATA[
+            try {
+                window.addEventListener('load', function(){
+                    setTimeout(scrollTo, 0, 0, 1); 
+                }, false);
+            } catch(e) {}
+        // ]]>
+    </script>
+    <!--[if lt IE 9]> 
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">view contents</a>
+        <a href="#gnb">view navigation</a>
+    </div>
+    
+    <header id="headerArea">
+        <div class="headerInner">
+            <h1><a href="./index.html">iron man</a></h1>
+            <a class="menuOpen" href="#none"><i class="fas fa-bars"></i><span class="hidden">menu</span></a>
+            <nav id="gnb" class="mainMenu">
+                <h2 class="hidden">navigation</h2>
+                <ul>
+                    <li><h3><a href="./sub_1.html">COMICS</a></h3></li>
+                    <li><h3><a href="./sub_2.html">MOVIES</a></h3></li>
+                    <li><h3><a href="./sub_3.html">GALLERY</a></h3></li>
+                    <li><h3><a href="./sub_4.html">NEWS</a></h3></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div id="wrap">
+        <div class="videoBox">
+            <video autoplay loop muted id="videoBG">
+                <source src="video/main_video.mp4" type="video/mp4">
+            </video>
+            <img src="images/main_photo_back.jpg" id="imgBG" alt="">
+            <a class="down" href="#none"><i class="fas fa-angle-double-down"></i><span class="hidden">down</span></a>
+        </div>
+
+        <article id="content">
+                <h2 class="hidden">contents</h2>
+                <section class="comic">
+                    <h3><span>C</span>OMICS</h3>
+                    <p>Iron Man's most popular and up-to-date comics.</p>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image:url(images/main_comic1.jpg)"><p>Invincible Iron Man #600</p></div>
+                            <div class="swiper-slide" style="background-image:url(images/main_comic2.jpg)"><p>Marvel-Verse: Iron Man</p></div>
+                            <div class="swiper-slide" style="background-image:url(images/main_comic4.jpg)"><p>Tony Stark: Iron Man #14</p></div>
+                            <div class="swiper-slide" style="background-image:url(images/main_comic3.jpg)"><p>Invincible Iron Man #15</p></div>
+                            <div class="swiper-slide" style="background-image:url(images/main_comic5.jpg)"><p>Tony Stark: Iron Man #17</p></div>
+                            <div class="swiper-slide" style="background-image:url(images/main_comic7.jpg)"><p>Tony Stark: Iron Man #19</p></div>
+                            <div class="swiper-slide" style="background-image:url(images/main_comic6.jpg)"><p>Marvel's Avengers: Iron Man#1</p></div>
+                            <div class="swiper-slide" style="background-image:url(images/main_comic8.jpg)"><p>Iron Man: Invincible Origins</p></div>
+                            <div class="swiper-slide" style="background-image:url(images/main_comic9.jpg)"><p>Iron Man 2020: Edition #1</p></div>
+                            <div class="swiper-slide" style="background-image:url(images/main_comic10.jpg)"><p>Avengers vs X-Men</p></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <a href="./sub_1.html" class="comic_more">More Comics View &gt;</a>
+                </section>
+                <section class="movie">
+                    <h3>MOVIES</h3>
+                    <div class="movie_info">
+                        Iron Man tells the story of Tony Stark,<br>a billionaire industrialist and genius inventor <br>who is kidnapped and forced to build a devastating weapon. <br>Instead, using his intelligence and ingenuity, <br>Tony builds a high-tech suit of armor and escapes captivity. <br>When he uncovers a nefarious plot with global implications, <br>he dons his powerful armor and vows to protect the world as Iron Man.
+                    </div>
+                    <div class="movie_more">
+                        <dl class="trailer">
+                            <dt>Movie Trailer</dt>
+                            <dd><a href="./sub_2.html">Go to link &gt;</a></dd>
+                        </dl>
+                        <dl class="covering">
+                            <dt>Behind The Scenes</dt>
+                            <dd><a href="./sub_2.html">Go to link &gt;</a></dd>
+                        </dl>
+                    </div>
+                </section>
+                <section class="character">
+                    <h3><span>CHARACTER</span></h3>
+                    <div class="tabs">     
+                        <p><a href="#none" class="tab tab1">Tony Stark</a></p>     
+                        <div class="contlist">         
+                            <ul>
+                                <li><img src="images/character_tony.jpg" alt=""></li>
+                                <li>
+                                    <dl>
+                                        <dt>Tony Stark</dt>
+                                        <dd>Iron Man. Stark is an industrialist, genius inventor, hero and former playboy who is CEO of Stark Industries. At the beginning of the series, he is a chief weapons manufacturer for the U.S. military, until he has a change of heart and redirects his technical knowledge into the creation of mechanized suits of armor which he uses to defend against those that would threaten peace around the world.</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <p><a href="#none" class="tab tab2">Pepper Potts</a></p>
+                        <div class="contlist">
+                            <ul>
+                                <li><img src="images/character_pepper.jpg" alt=""></li>
+                                <li>
+                                    <dl>
+                                        <dt>Pepper Potts</dt>
+                                        <dd>Pepper Potts is a fictional supporting character appearing in books published by Marvel Comics, particularly those featuring Iron Man, in which she serves as a supporting character, sometimes as a romantic love interest of Tony Stark. Created by writers Stan Lee and Robert Bernstein and designed by artist Don Heck, she first appeared in Tales of Suspense #45 (Sept. 1963). In 2007, she joined the Fifty State Initiative under the code name Hera.</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <p><a href="#none" class="tab tab3">James Rhodes</a></p>
+                        <div class="contlist">
+                            <ul>
+                                <li><img src="images/character_james.jpg" alt=""></li>
+                                <li>
+                                    <dl>
+                                        <dt>James Rhodes</dt>
+                                        <dd>War Machine (James Rupert Rhodey Rhodes) is a fictional superhero appearing in American comic books published by Marvel Comics. Jim Rhodes first appeared in Iron Man #118 (January 1979) by David Michelinie and John Byrne. The War Machine armor, which became his signature armored battlesuit, was created by Len Kaminski and Kevin Hopgood.</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <p><a href="#none" class="tab tab4">Happy Hogan</a></p>
+                        <div class="contlist">
+                            <ul>
+                                <li><img src="images/character_happy.jpg" alt=""></li>
+                                <li>
+                                    <dl>
+                                        <dt>Happy Hogan</dt>
+                                        <dd>Harold Joseph Happy Hogan is a fictional character appearing in American comic books published by Marvel Comics. The character is depicted usually as a supporting character in stories featuring Iron Man and is also the father of Teen Abomination.</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <p><a href="#none" class="tab tab5">Nick Fury</a></p>
+                        <div class="contlist">
+                            <ul>
+                                <li><img src="images/character_nick.jpg" alt=""></li>
+                                <li>
+                                    <dl>
+                                        <dt>Nick Fury</dt>
+                                        <dd>Colonel Nicholas Joseph Fury Sr. is a fictional character appearing in American comic books published by Marvel Comics. Created by writer/artist Jack Kirby and writer Stan Lee, Fury first appeared in Sgt. Fury and his Howling Commandos #1 (May 1963), a World War II combat series that portrayed the cigar-chomping Fury as leader of an elite U.S. Army unit.</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
+                </section>
+                <section class="hero">
+                    <h3>OTHER HEROES</h3>
+                    <ul>
+                        <li>
+                            <div><img src="images/hero_01.jpg" alt=""></div>
+                            <div class="hero_info">
+                                <p class="hero_name">Captain America</p>
+                                <p>Recipient of the Super-Soldier serum, World War II hero Steve Rogers fights for American ideals as one of the world’s mightiest heroes and the leader of the Avengers.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div><img src="images/hero_02.jpg" alt=""></div>
+                            <div class="hero_info">
+                                <p class="hero_name">Spider Man</p>
+                                <p>Bitten by a radioactive spider, Peter Parker’s arachnid abilities give him amazing powers he uses to help others, while his personal life continues to offer plenty of obstacles.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div><img src="images/hero_03.jpg" alt=""></div>
+                            <div class="hero_info">
+                                <p class="hero_name">Black Widow</p>
+                                <p>Despite super spy Natasha Romanoff’s checkered past, she’s become one of S.H.I.E.L.D.’s most deadly assassins and a frequent member of the Avengers.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div><img src="images/hero_04.jpg" alt=""></div>
+                            <div class="hero_info">
+                                <p class="hero_name">Hulk</p>
+                                <p>Dr. Bruce Banner lives a life caught between the soft-spoken scientist he’s always been and the uncontrollable green monster powered by his rage.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div><img src="images/hero_05.jpg" alt=""></div>
+                            <div class="hero_info">
+                                <p class="hero_name">Hawkeye</p>
+                                <p>A master marksman and longtime friend of Black Widow, Clint Barton serves as the Avengers’ amazing archer.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div><img src="images/hero_06.jpg" alt=""></div>
+                            <div class="hero_info">
+                                <p class="hero_name">Thor</p>
+                                <p>The son of Odin uses his mighty abilities as the God of Thunder to protect his home Asgard and planet Earth alike.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div><img src="images/hero_07.jpg" alt=""></div>
+                            <div class="hero_info">
+                                <p class="hero_name">Doctor Strange</p>
+                                <p>Formerly a renowned surgeon, Doctor Stephen Strange now serves as the Sorcerer Supreme—Earth’s foremost protector against magical and mystical threats.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div><img src="images/hero_08.jpg" alt=""></div>
+                            <div class="hero_info">
+                                <p class="hero_name">Vision</p>
+                                <p>The android called Vision defies physics and fights as an Avenger with the power of density manipulation and his flawless computer brain.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="gallery">
+                    <h3>GALLERY</h3>
+                    <div class="gallery_wrap">
+                        <div class="left">
+                            <a href="./sub_3.html"><img src="images/gall_01.jpg" alt=""></a>
+                        </div>
+                        <div class="right">
+                            <div><a href="./sub_3.html"><img src="images/gall_02.jpg" alt=""></a></div>
+                            <div><a href="./sub_3.html"><img src="images/gall_03.jpg" alt=""></a></div>
+                            <div><a href="./sub_3.html"><img src="images/gall_04.jpg" alt=""></a></div>
+                            <div><a href="./sub_3.html"><img src="images/gall_05.jpg" alt=""></a></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="news">
+                    <h3><span>N</span>EWS</h3>
+                    <div class="news_wrap">
+                        <ul class="news_up">
+                            <li><a href="./sub_4.html"><img src="images/news_01.jpg" alt=""></a></li>
+                            <li><a href="./sub_4.html">Iron Man, die to save the world</a></li>
+                        </ul>
+                        <ul class="news_down">
+                            <li>
+                                <a href="./sub_4.html">
+                                    <img src="images/news_02.jpg" alt="">
+                                    <p>Will Mel Gibson Direct Iron Man 4?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./sub_4.html">
+                                    <img src="images/news_03.jpg" alt="">
+                                    <p>Iron man? Paper man?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./sub_4.html">
+                                    <img src="images/news_04.jpg" alt="">
+                                    <p>Robert Downey Jr. Talks 'Iron Man 4'</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+        </article>
+	</div>		
+    
+	<footer id="footerArea">
+        <a href="#">TOP</a>
+	    <ul class="company_logo">
+	        <li><a href="#none"><img src="images/marvel_logo.png" alt=""></a></li>
+	        <li><a href="#none"><img src="images/marvel_comics_logo.png" alt=""></a></li>
+	        <li><a href="#none"><img src="images/marvel_studio_logo.png" alt=""></a></li>
+	    </ul>
+	    <ul class="company_info">
+	        <li><a href="#none">Terms of Use</a></li>
+	        <li><a href="#none">Privacy Policy</a></li>
+	        <li><a href="#none">License Agreement</a></li>
+	        <li><a href="#none">Interest-Based Ads</a></li>
+	        <li><a href="#none">Marvel Insider Terms</a></li>
+	    </ul>
+	    <address>
+	        ©2020 MARVEL
+	    </address>
+	</footer>
+</body>
+</html>

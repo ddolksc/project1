@@ -1,0 +1,30 @@
+<header>
+    <h1 id="logo"><a href="#">삼성라이온즈</a></h1>
+    <nav id="gnb">
+        <h2 class="hidden">글로벌네비게이션</h2>
+        <ul class="join">
+<?
+    if(!$userid)	{
+?>
+            <li><a href="./login/login_form.php">로그인</a></li>
+            <li><a href="./member/member_check.html">회원가입</a></li>
+<?
+	}
+	else   // 로그인이 되어있는 상태
+	{
+?>
+            <li><a href="./login/logout.php">로그아웃</a></li>
+            <li><a href="./login/member_form_modify.php">정보수정</a></li>
+<?
+	}
+?>
+        </ul>
+        <ul class="menu">
+            <li><h3><a href="#">구단</a></h3></li>
+            <li><h3><a href="#">선수단</a></h3></li>
+            <li><h3><a href="#">경기일정</a></h3></li>
+            <li><h3><a href="#">히스토리</a></h3></li>
+            <li><h3><a href="#">팬</a></h3></li>
+        </ul>
+    </nav>
+</header>

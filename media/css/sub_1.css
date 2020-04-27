@@ -1,0 +1,159 @@
+/* 와이드 pc  */
+	
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+
+#imgBG{
+    position:fixed;
+    left: 50%;
+    top:50%;
+    width:auto;
+    min-width:100%;
+    height:auto;
+    min-height:100%;
+    transform:translateX(-50%) translateY(-50%);
+    z-index:-100;
+}
+.down{
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    left:50%;
+    margin-left: -15px;
+    bottom: 10%;
+	animation:ani 1s infinite  alternate;
+}
+@keyframes ani {
+	0% { transform:scale(1); opacity:1; color: #fff;}
+	100% { transform:scale(1.2); opacity:0.6; color: #000;}
+}
+
+
+#content{
+    background: rgba(0,0,0,0.8);
+    overflow: hidden;
+}
+section{
+    overflow: hidden;
+}
+section h3{
+    text-align: center;
+    margin: 70px 0 50px;
+    font-size: 45px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+.trailer h3{
+    margin-top: 120px;
+}
+.trailer h3:after{
+    content: "";
+    display: block;
+    width: 180px;
+    height: 4px;
+    background: #f00;
+    margin: 0 auto;
+}
+.trailer .clip_part{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px
+}
+.subTitle {
+    padding-top: 10px;
+    font-size: 32px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color: #333;
+}
+.subTitle span{
+    background: #fbd204;
+    padding: 0 0.5%;
+}
+.clip_part .contentArea {
+    position: relative;
+    width: 80%;
+    margin: 30px auto;
+}
+.imgPart {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 30px
+}
+.clip_part .contentArea .imgPart .popup-youtube>img {
+    width: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3)
+}
+.clip_part .contentArea p{
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+.clip_part .playBnt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 110px;
+    height: 110px;
+    margin: -55px 0 0 -55px;
+    border-radius: 94px;
+    background: rgba(0,0,0,.6)
+}
+.clip_part .imgPart:hover .playBnt {
+    background: rgba(255,0,0,.6)
+}
+.clip_part .playBnt img{
+    position: relative;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    margin: -32px 0 0 -20px    
+}
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+    
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+    .clip_part .contentArea{
+        width: 90%;
+    }
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+	.trailer h3{
+        margin-top: 90px;
+    }
+    .trailer .clip_part{
+        width: auto;
+        margin: 0 auto;
+    }
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+	section h3{
+        font-size: 35px;
+    }
+    .trailer h3:after{
+        width: 140px;
+    }
+    .subTitle{
+        font-size: 22px;
+    }
+    .clip_part .contentArea p{
+        font-size: 14px;
+    }
+    .clip_part .playBnt{
+        width: 80px;
+        height: 80px;
+        margin: -40px 0 0 -40px
+    }
+}
